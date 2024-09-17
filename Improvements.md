@@ -1,0 +1,6 @@
+- Sensor should be injected from constructor instead of creating the object itself, doing this allow both sensor and alarm to be tested separately. In this case, sensor class is not tested at all.
+- You can't control the sensor amount to test specific scenario
+- Alarm count has no usage, not sure the requirement, assume to be exposed, added public get
+- AlarmOn does not need a backing field, changed to public get, private set
+- There is no way to turn off the alarm
+- Using a single pipe instead of double pipe for or operation without short curcuit can cause additional operation, in this case, is negligible.

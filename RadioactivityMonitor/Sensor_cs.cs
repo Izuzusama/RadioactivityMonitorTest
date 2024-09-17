@@ -2,7 +2,7 @@
 
 namespace RadioactivityMonitor
 {
-    public class Sensor
+    public class Sensor : ISensor
     {
         const double Offset = 16;
 
